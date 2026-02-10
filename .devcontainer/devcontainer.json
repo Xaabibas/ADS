@@ -1,0 +1,19 @@
+{
+    "image": "xianpengshen/clang-tools:18",
+    "runArgs": [
+        "--platform", "linux/amd64"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "llvm-vs-code-extensions.vscode-clangd",
+                "vadimcn.vscode-lldb",
+                "ms-vscode.makefile-tools",
+                "ms-vscode.cpptools",
+                "davidanson.vscode-markdownlint",
+                "foxundermoon.shell-format"
+            ]
+        }
+    },
+    "postCreateCommand": "bash ci/ubuntu.bash"
+}
