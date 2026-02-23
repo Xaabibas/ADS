@@ -1,4 +1,8 @@
 {
     "C_Cpp.intelliSenseEngine": "disabled",
     "files.eol": "\n",
+    
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.formatOnType": true
 }

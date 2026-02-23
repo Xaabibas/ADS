@@ -5,11 +5,16 @@
             "label": "Build Release",
             "type": "shell",
             "command": "bash ci/build.bash ${relativeFileDirname} Release",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "label": "Build Asan",
             "type": "shell",
-            "command": "bash ci/build.bash ${relativeFileDirname} Asan",
+            "command": "bash ci/build.bash ${relativeFileDirname} Asan"
         }
     ]
 }

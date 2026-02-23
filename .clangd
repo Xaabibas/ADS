@@ -1,4 +1,7 @@
-InlayHints:
-  Designators: No
-  Enabled: No
-  DeducedTypes: No
+CompileFlags:
+  Add:
+    - -std=c++20
+    - -O2
+    - -Wall
+    - -Wextra
+    - -Wshadow
