@@ -16,10 +16,7 @@ int main() {
   std::vector<std::string> data;
   std::string line;
 
-  while (std::getline(std::cin, line)) {
-    if (line == "exit") {
-      break;
-    }
+  while (std::cin >> line) {
     if (!line.empty()) {
       data.push_back(line);
     }
