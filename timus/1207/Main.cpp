@@ -1,13 +1,14 @@
 #include <algorithm>
 #include <cmath>
+#include <cstdint>
 #include <iostream>
 #include <limits>
 #include <vector>
 
 struct Point {
   int index;
-  int x;
-  int y;
+  int64_t x;
+  int64_t y;
 };
 
 bool Compare(const Point& point1, const Point& point2) {
