@@ -7,8 +7,8 @@
 
 struct Point {
   int index;
-  int64_t x;
-  int64_t y;
+  int x;
+  int y;
 };
 
 bool Compare(const Point& point1, const Point& point2) {
@@ -19,7 +19,10 @@ bool Compare(const Point& point1, const Point& point2) {
     return false;
   }
 
-  return point1.y * point2.x < point2.y * point1.x;
+  int64_t mul1 = static_cast<int64_t>(point1.y) * point2.x;
+  int64_t mul2 = static_cast<int64_t>(point2.y) * point1.x;
+
+  return mul1 < mul2;
 }
 
 int main() {
