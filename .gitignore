@@ -39,3 +39,13 @@ compile_commands.events.json
 # Build
 out/
 build/
+
+.devcontainer
+.vscode
+ci
+
+.clang-format
+.clang-tidy
+.clangd
+
+CODE_OF_CONDUCT.md
